@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "chromeTest":"cypress run --browser chrome",
     "AllTest":"cypress run",
-    "smokeTest":"cypress run --spec 'cypress/e2e/test_scripts/loginpage.cy.js','cypress/e2e/test_scripts/framehandle.cy.js'"
+    "smokeTest":"cypress run --spec cypress/e2e/test_scripts/loginpage.cy.js,cypress/e2e/test_scripts/framehandle.cy.js"
   },
   "author": "Ganesh Poul",
   "license": "ISC",
