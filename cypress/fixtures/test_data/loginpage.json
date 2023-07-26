@@ -1,0 +1,7 @@
+{
+    "adminUsername":"ubaid@nivoda.net",
+    "password":"Nivoda123",
+    "invalidPass":"Abc@123",
+    "loginErrorMsg":"Your email or password is incorrect. Please try again.",
+    "adminProfileText":"Ubaid Ullah"
+}

@@ -1,0 +1,12 @@
+{
+    "menuLabel":"Enquiries",
+    "subMenuLabel":"Unanswered Info",
+    
+    "labels":["Brown","Green","Blue","EyeClean","Cancelled Reason"],
+    "values":["VL Brown","S Green","VVL Blue","90%", "Price issue"],
+
+    "HoldRequestData":{
+        "subMenuLabel":"Hold Request",
+        "SuccessMsg":"Hold request have been accepted"
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nivoda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chromeTest":"cypress run --browser chrome",
+    "AllTest":"cypress run"
+  },
+  "author": "Ganesh Poul",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.1",
+    "cypress-downloadfile": "^1.2.3"
+  },
+  "devDependencies": {
+    "blob-util": "^2.0.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-xpath": "^2.0.1",
+    "file-saver": "^2.0.5",
+    "fs-extra": "^11.1.1",
+    "neat-csv": "^5.2.0"
+  }
+}
