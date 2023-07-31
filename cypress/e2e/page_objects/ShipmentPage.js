@@ -44,8 +44,8 @@ class ShipmentPage{
     }
 
     handleNewBrowserWindow(){
-        cy.xpath("(//img[@alt='search'])[3]").click();
-        cy.wait(5000);
+        cy.xpath("(//img[@alt='search'])[1]").click();
+        cy.wait(20000);
 
         this.addManagementFee().then((ele)=>{
             let newUrl= ele.prop('href');
