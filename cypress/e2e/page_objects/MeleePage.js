@@ -59,7 +59,7 @@ class MeleePage{
         let rowLength=0;
         const downloadFolderPath = 'cypress/downloads';
         this.selectSupplierNameFromDropdown(supplierName);
-        cy.wait(10000);
+        cy.wait(20000);
         this.getTotalRow().then(($row)=>{
             rowLength=$row.length;
             cy.log("Actual Row length after applying filter: "+rowLength);
