@@ -1,7 +1,7 @@
 
 describe("Handling Frame",()=>{
 
-    it('handled element inside frame',()=>{
+    it('TC07_handled element inside frame',()=>{
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
        
         cy.frameLoaded('#courses-iframe');

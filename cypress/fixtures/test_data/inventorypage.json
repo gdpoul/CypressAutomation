@@ -1,0 +1,10 @@
+{
+    "menuLabel":"Global Inventory",
+    "tabName":["All","Pending","In inventory","On hold","Sold","Returned","Refresh"],
+
+    "mainFilterHeader":"Filters",
+    "dropdownLabels":["Supplier","Location"],
+    "footerBtn":["Apply filters","Cancel"],
+    "supplierValue":"Unique Gems",
+    "locationValue":"India"
+}

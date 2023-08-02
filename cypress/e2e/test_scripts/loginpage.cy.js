@@ -19,7 +19,7 @@ describe("Login Page Test",()=>{
         cy.visit(Cypress.env("url"));
     })
 
-    it('Verify Login successful',()=>{
+    it('TC01_Verify Login successful',()=>{
         lp.getEmail().type(loginData.adminUsername);
         lp.getPassword().type(loginData.password);
         lp.getLoginBtn().click();
@@ -30,7 +30,7 @@ describe("Login Page Test",()=>{
         })
     })
 
-    it('TC01_LoginWithIncorrectCredsAndVerifyErrorMsg',()=>{
+    it('TC02_LoginWithIncorrectCredsAndVerifyErrorMsg',()=>{
         lp.getEmail().type(loginData.adminUsername);
         lp.getPassword().type(loginData.invalidPass);
         lp.getLoginBtn().click();

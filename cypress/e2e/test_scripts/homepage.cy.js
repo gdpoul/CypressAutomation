@@ -20,7 +20,7 @@ describe('Home Page Test',()=>{
         cy.visit(Cypress.env("url"));
     })
 
-    it('TC02_SelectNavigationBarModuleAndVerify',()=>{
+    it('TC03_SelectNavigationBarModuleAndVerify',()=>{
         cy.loginToNivoda(loginData.adminUsername,loginData.password)
         hp.selectNavigationBarModule(homePageData.menuLabel)
         hp.selectNavigationBarModule(homePageData.subMenuLabel)

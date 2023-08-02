@@ -17,7 +17,7 @@ describe('Melee Page Test',()=>{
         cy.visit('https://website-melee.nivodaapi.net/');     
     })
 
-    it('DownloadCSVFileAndVerifyData',()=>{
+    it('TC09_DownloadCSVFileAndVerifyData',()=>{
         cy.loginToNivoda(loginData.adminUsername,loginData.password)
         hp.selectNavigationBarModule("Melee Dashboard")
         hp.selectNavigationBarModule("Melee Orders")

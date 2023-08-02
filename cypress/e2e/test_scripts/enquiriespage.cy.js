@@ -23,7 +23,7 @@ describe('Enquiries Page Test',()=>{
       
     })
 
-    it("TC03_ProvideDimondDetailsInEnquiriesModuleAndVerify",()=>{
+    it("TC04_ProvideDimondDetailsInEnquiriesModuleAndVerify",()=>{
         const labels= enquiriesPageData.labels;
         const values= enquiriesPageData.values;
         

@@ -30,7 +30,7 @@ describe('Shipment Page Test',()=>{
     //     sp.DownLoadCommercialInvoiceExcelFile(shipmentPageData.invoiceNo)
     // })
 
-    it('TC09_Handle New Browser Window',()=>{
+    it('TC10_Handle New Browser Window',()=>{
         cy.loginToNivoda(loginData.adminUsername,loginData.password)
         hp.selectNavigationBarModule(shipmentPageData.menuLabel)
         hp.selectNavigationBarModule(shipmentPageData.subMenuLabel)
