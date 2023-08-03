@@ -20,5 +20,12 @@ class LoginPage{
     getLoginErrorMsg(){
         return cy.get('p.text-danger')
     }
+
+     /**======================Locators======================== */
+    invalidLogin(username, invalidPass){
+        this.getEmail().type(username);
+        this.getPassword().type(invalidPass);
+        this.getLoginBtn().click();
+    }
 }
 export default LoginPage;

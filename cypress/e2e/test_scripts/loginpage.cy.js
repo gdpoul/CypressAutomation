@@ -20,10 +20,7 @@ describe("Login Page Test",()=>{
     })
 
     it('TC01_Verify Login successful',()=>{
-        lp.getEmail().type(loginData.adminUsername);
-        lp.getPassword().type(loginData.password);
-        lp.getLoginBtn().click();
-        hp.getProfilePicture().should('be.visible')
+        cy.loginToNivoda(loginData.adminUsername,loginData.password)
         hp.getProfileName().then(($el)=>{
             const profileText=$el.text().trim();
             expect(profileText).to.equal(loginData.adminProfileText)
@@ -31,9 +28,7 @@ describe("Login Page Test",()=>{
     })
 
     it('TC02_LoginWithIncorrectCredsAndVerifyErrorMsg',()=>{
-        lp.getEmail().type(loginData.adminUsername);
-        lp.getPassword().type(loginData.invalidPass);
-        lp.getLoginBtn().click();
+        lp.invalidLogin(loginData.adminUsername,loginData.invalidPass);
         lp.getLoginErrorMsg().should('have.text',loginData.loginErrorMsg);
     })
 })
