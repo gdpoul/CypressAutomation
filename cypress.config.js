@@ -11,6 +11,14 @@ module.exports = defineConfig({
     "adminName":"Ubaid Ullah"
   },
   reporter: 'cypress-mochawesome-reporter',
+  reporterOptions:{
+    "reportFilename": "Report",
+    "overwrite":false,
+    "html": true,
+    "json": true,
+    "quiet": true,
+    "timestamp":"ddmmyyyy_HHMMss"
+  },
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
