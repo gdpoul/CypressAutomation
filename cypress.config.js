@@ -10,6 +10,7 @@ module.exports = defineConfig({
     "url":"https://website-fbn.nivodaapi.net/",
     "adminName":"Ubaid Ullah"
   },
+  
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions:{
     "reportFilename": "Report",
