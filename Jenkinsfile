@@ -40,8 +40,7 @@ pipeline {
   post{
     always{
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'cypress/reports/html', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
-
       emailext([attachLog: true, body: '$DEFAULT_CONTENT', subject: '$DEFAULT_SUBJECT', to: 'ganeshdileep.poul@speckyfox.com'])
-    
+    }
   }
 }
