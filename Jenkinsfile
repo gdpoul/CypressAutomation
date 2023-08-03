@@ -43,7 +43,7 @@ pipeline {
     }
 
     always{
-      emailext attachLog: true, body: '$DEFAULT_CONTENT', subject: '$DEFAULT_SUBJECT', to: 'ganeshdileep.poul@speckyfox.com'
+      emailext([attachLog: true, body: '$DEFAULT_CONTENT', subject: '$DEFAULT_SUBJECT', to: 'ganeshdileep.poul@speckyfox.com'])
     }
   }
 }
