@@ -2,15 +2,16 @@ const { defineConfig } = require('cypress')
 const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
 
 module.exports = defineConfig({
-  "defaultCommandTimeout":30000,
-  "watchForFileChanges":false,
-  "downloadsFolder":"cypress/downloads",
-
   "env":{
     "url":"https://website-fbn.nivodaapi.net/",
     "adminName":"Ubaid Ullah"
   },
-  
+  "defaultCommandTimeout":30000,
+  "watchForFileChanges":false,
+  "downloadsFolder":"cypress/downloads",
+  retries:{
+    runMode:1
+  },
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions:{
     "reportFilename": "Report",
